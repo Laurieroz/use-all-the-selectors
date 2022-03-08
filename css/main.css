@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #fdf6e3;
 }
@@ -46,14 +54,14 @@ ol li:last-of-type {
   color: #2aa198;
 }
 
-.types li odd {
+.types li:nth-child(odd) {
   background-color: #657ba3;
 }
 
-.types li even {
+.types li:nth-child(even) {
   background-color: #586e75;
 }
-/* third <li> element in its parent */
+
 .types li:nth-of-type(3) {
   background-color: #d04b16;
 }
